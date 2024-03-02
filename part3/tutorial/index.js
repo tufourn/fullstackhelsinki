@@ -48,7 +48,7 @@ const generateId = () => {
 }
 
 app.post('/api/notes', (req, res) => {
-  const body = request.body
+  const body = req.body
 
   if (!body.content) {
     return res.status(400).json({
